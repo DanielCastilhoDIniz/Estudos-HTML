@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudando HTML</title>
+  </head>
+  <body>
+    <h1 id="inicio">Noções gerais sobre HTML</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+      <a href="#caracteristicas"><li>Características da linguagem HTML</li></a>
+      <a href="#tags"><li>Tags ou marcações HTML</li></a>
+      <a href="#estrutura"><li>Estrutura de um documento HTML</li></a>
+      <a href="#criando"
+        ><li>Criando, abrindo e manipulando documentos HTML</li></a
+      >
+      <a href="#caractere"><li>Códigos especiais de caracteres</li></a>
+      <a href="#cabecalho"><li>Cabeçalho</li></a>
+      <a href="#estilo"><li>Aplicando estilos de texto</li></a>
+      <a href="#referencias"><li>Referências</li></a>
+    </ul>
+
+    <h2 id="caracteristicas">Características da linguagem HTML</h2>
+    <small> <a href="#inicio">voltar</a></small>
+    <p>
+      A linguagem <mark>HTML</mark> (Hypertext Markup Language) tem o objetivo
+      de formatar <del>texto</del> através de marcações especiais denominadas
+      tags, para que possam ser exibidos de forma conveniente pelos
+      <strong>clientes <u>Web</u></strong> , também denominados navegadores ou
+      browsers. Além disso, esta linguagem possibilita a interligação entre
+      <u>páginas da <u>Web</u></u
+      >, criando assim documentos com o conceito de hipertexto.
+    </p>
+
+    <p>
+      Características básicas da linguagem
+      <abbr title="HyperText Markup Language">HTML</abbr>:
+    </p>
+
+    <ul>
+      <li>
+        Documentos <i>HTML</i> são arquivos de texto escritos em
+        <abbr title="American Standard Code for Information Interchange"
+          >ASCII</abbr
+        >
+      </li>
+      <li>
+        O HTML não faz diferença entre letras maiúsculas e minúsculas em suas
+        marcações, ou seja, não é `case sensitive'
+      </li>
+
+      <li>
+        Nem todas as <mark>marcações</mark> e seus correspondentes recursos são
+        suportados por qualquer navegador. Quando um cliente <u>Web</u> não
+        entende uma marcação, ele simplesmente a ignora
+      </li>
+
+      <li>
+        Arquivos HTML podem possuir as extensões `html' ou `htm'. A primeira é
+        normalmente utilizada em sistemas UNIX e a segunda em sistemas Windows.
+        Os Browsers são capazes de exibir documentos com ambas as extensões.
+      </li>
+    </ul>
+    <h2 id="tag">Tags ou marcações HTML</h2>
+    <small> <a href="#inicio">voltar</a></small>
+    <p>
+      A linguagem HTML pertence a uma classe de linguagens de programação
+      conhecida como `Tag Languages', ou simplesmente Linguagem de Marcação.
+      Neste tipo de linguagem, os comandos são escritos em forma de marcações
+      denominadas tags.
+    </p>
+
+    <p>
+      De um modo geral, as tags aparecem em pares, delimitando o texto a ser
+      formatado. A tag que abre o campo de atuação de um comando pode ser
+      identif
+    </p>
+
+    <p>
+      `$<$ >', enquanto a que encerra este campo de atuação possui os sinais
+      $<$>'. Por exemplo:
+    </p>
+    <p><b> Linguagem </b> de Marcação.</p>
+
+    <p>
+      A sintaxe acima determina que a marcação B' seja aplicado ao texto
+      `Linguagem', mas não ao texto `de programação'.
+    </p>
+
+    <p>
+      Há exceções a esse funcionamento de paridade das tags, onde a marcação
+      <tag> não necessitará de sua correspondente </tag>. Veremos exemplos de
+      ambos os tipos mais adiante. Além do comando propriamente dito, uma tag
+      pode conter seus parâmetros
+    </p>
+
+    <p>
+      Parâmetros são recursos próprios de cada marcação, que permitem que ele
+      seja executado de diversas formas. Pode-se dizer que enquanto um comando
+      diz ao Browser o que fazer, seus parâmetros dizem a ele como fazer,
+      através de suas opções. Assim como cada comando possui parâmetros
+      específicos, cada parâmetro possui opções específicas. Veja o exemplo:
+    </p>
+
+    <p>&lt; font size="4" color="green"&gt; Texto &lt;/font &gt;</p>
+    <p>
+      No exemplo acima, `FONT' é o comando e, `SIZE' e `COLOR' são os parâmetros
+      cujas opções escolhidas pelo programador foram, respectivamente, `4' e
+      `green'. Note que, ao contrário da marcação de abertura, a marcação de
+      fechamento de um comando não precisa mencionar seus parâmetros.
+    </p>
+
+    <h2 id="estrutura">Estrutura de um documento HTML</h2>
+    <small> <a href="#inicio">voltar</a></small>
+    <p>
+      A estrutura principal de um documento HTML possui duas partes básicas: o
+      cabeçalho e o corpo do programa. Todo documento deve ser iniciado com a
+      marcação &lt; html &gt; e finalizado com &lt; /html &gt;.
+    </p>
+
+    <p>
+      Este par de tags é essencial. A área do cabeçalho, embora muito
+      conveniente, é opcional e delimitada pelas marcações head &gt; e &lt;/head
+      &gt;,Entre estas tags pode ser definido o título da página, através das
+      marcações &lt;title&gt;e &lt;/title&gt;. O título especificado será
+      exibido na barra de título do Browser. A maioria dos comandos HTML será
+      colocada na área do corpo do programa, que é delimitada pelas marcações
+      &lt;body&gt; e &lt;/body &gt;. Excetuandose os `frame documents', que
+      serão vistos mais adiante, esta é uma marcação obrigatória.
+    </p>
+
+    <p>O exemplo abaixo ilustra a estrutura de um programa HTML.</p>
+
+    <p>&lt;HTML&gt;</p>
+    <p>&lt;HEAD&gt;</p>
+    <p>&lt;TITLE&gt; Primeiro Exemplo &lt;/TITLE&gt;</p>
+    <p>&lt;/HEAD&gt;</p>
+    <p>&lt;BODY&gt;</p>
+    <p>Bem-vindo ao mundo do HTML!</p>
+    <p>&lt;/BODY&gt;</p>
+    <p>&lt;/HTML&gt;</p>
+
+    <h2 id="criando">Criando, abrindo e manipulando documentos HTML</h2>
+    <small> <a href="#inicio">voltar</a></small>
+    <p>
+      Documentos HTML podem ser criados em qualquer editor de texto visual (nos
+      quais a visualização do arquivo não depende de compilação de código), tais
+      como Bloco de Notas, VI, emacs, etc. Além dos editores específicos para 8
+      várias plataformas, existem conversores de diversos formatos, por exemplo
+      de *.doc para *.html.
+    </p>
+
+    <p>
+      e *.doc para *.html. Para criar uma página no Bloco de Notas do Browser,
+      por exemplo, é preciso digitar o texto desejado juntamente com as
+      marcações que o formatarão. Um documento escrito desta forma é denominado
+      código fonte.
+    </p>
+
+    <p>
+      Para praticar, abra o Bloco de Notas e digite o exemplo da seção anterior.
+      Na hora de salvá-lo, no campo `Salvar como Tipo' da caixa de diálogo
+      `Salvar Como', escolha a opção <i>`Todos os Arquivos'</i> e no campo `Nome
+      do Arquivo' digite o nome desejado juntamente com a extensão .html ou
+      .htm. Se este procedimento não for adotado, o arquivo será gravado com a
+      extensão padrão .txt e não poderá ser aberto por Browsers
+    </p>
+
+    <p>
+      Depois de salvo o documento, é possível alterar seu código fonte clicando
+      com o botão direito do mouse sobre o ícone da página, escolhendo a opção
+      `Abrir Com' e, em seguida, selecionando o programa editor de texto
+      disponível. No caso do Windows, este programa será o Bloco de Notas.
+    </p>
+
+    <p>
+      Para visualizar o arquivo criado no Internet Explorer, por exemplo, clique
+      no menu `Arquivo' e escolha a opção `Abrir'. Escreva então o caminho
+      completo para o arquivo desejado no campo oferecido ou clique no botão
+      `Procurar' para procurá-lo entre as pastas de seu computador.
+    </p>
+
+    <p>
+      Uma dica interessante para quem está começando e para quem deseja cada vez
+      mais conhecer os recursos da linguagem HTML é analisar códigos fonte de
+      páginas da <u>Web</u>. No Internet Explorer o usuário pode fazer isso
+      clicando no menu `Exibir' e escolhendo a opção `Código Fonte'. Desta forma
+      o código fonte da página será mostrado no Bloco de Notas, caso você esteja
+      trabalhando no Windows.
+    </p>
+    <h2 id="caractere">Códigos especiais de caracteres</h2>
+    <small> <a href="#inicio">voltar</a></small>
+
+    <p>
+      Existem dois tipos de códigos especiais que permitem inserir qualquer
+      caractere numa página HTML, mesmo que ele não esteja presente no teclado.
+      Estes códigos são especicados pela norma ISO-Latin-1 ou a partir de uma
+      identidade HTML.
+    </p>
+
+    <p>
+      A norma ISO utiliza um código composto pelo caractere `&' seguido do
+      símbolo `#' e de uma combinação de números, sendo terminado com `;'. Já a
+      identidade HTML usa o caractere `&' seguido de uma palavra que identica o
+      símbolo e de `;'. As identidades HTML correspondentes a alguns símbolos
+      comuns estão listados no apêndice A desta apostila.
+    </p>
+
+    <p>
+      É aconselhável, ao se criar uma página, utilizar estes códigos especiais
+      para criar a acentuação da língua portuguesa. Desta forma, Browsers mais
+      antigos ou até mesmo aqueles que estejam configurados para outros idiomas
+      poderão exibir corretamente a letra acentuada.
+    </p>
+
+    <h2 id="cabecalho">Cabeçalhos</h2>
+    <small> <a href="#inicio">voltar</a></small>
+    <p>
+      Outra forma usada para mudar o tamanho da letra e aplicar o estilo negrito
+      a um texto é o uso das marcações &lt;H&gt;. A linguagem HTML possui seis
+      comandos, de H1 a H6, que aplicam um tamanho de fonte diferenciado para o
+      texto que venham a envolver. Além de modifucar o tamanho, os comandos H
+      inserem linhas em branco acima e abaixo da linha de
+      <del>texto</del> formatada.
+    </p>
+
+    <p>
+      O comando H1 possui o maior tamanho, enquanto que H6 possui o menor
+      tamanho de fonte.
+    </p>
+    <p>A sintaxe básica deste comando é: &lt;Hn &gt;Texto&lt;/Hn&gt;</p>
+
+    <p>Onde n é o número de 1 a 6 correspondente ao tamanho do cabeçalho.</p>
+    <p>
+      O exemplo abaixo permite visualizar os tamanhos de cabeçalhos. Digite-o
+      salvando como `cabec.html'.
+    </p>
+    <p>&lt;html&gt;</p>
+    <p>&emsp;&lt;head&gt;</p>
+    <p>&emsp;&emsp;&lt;title&gt; Cabe&ccedil;alhos &lt;/title&gt;</p>
+    <p>&emsp;&lt;/head&gt;</p>
+    <p>&emsp;&lt;body&gt;</p>
+    <p>&emsp;&emsp;&lt;h1&gt; Cabe&ccedil;alho com tamanho 1 &lt;/h1&gt;</p>
+    <p>&emsp;&emsp;&lt;h2&gt; Cabe&ccedil;alho com tamanho 2 &lt;/h2&gt;</p>
+    <p>&emsp;&emsp;&lt;h3&gt; Cabe&ccedil;alho com tamanho 3 &lt;/h3&gt;</p>
+    <p>&emsp;&emsp;&lt;h4&gt; Cabe&ccedil;alho com tamanho 4 &lt;/h4&gt;</p>
+    <p>&emsp;&emsp;&lt;h5&gt; Cabe&ccedil;alho com tamanho 5 &lt;/h5&gt;</p>
+    <p>&emsp;&emsp;&lt;h6&gt; Cabe&ccedil;alho com tamanho 6 &lt;/h6&gt;</p>
+    <p>&emsp;&emsp;&lt;/body&gt;</p>
+    <p>&lt;/html&gt;</p>
+
+    <p><mark> o resultado será:</mark></p>
+    <html>
+      <head>
+        <title>Cabe&ccedil;alhos</title>
+      </head>
+      <body>
+        <h1>Cabe&ccedil;alho com tamanho 1</h1>
+        <h2>Cabe&ccedil;alho com tamanho 2</h2>
+        <h3>Cabe&ccedil;alho com tamanho 3</h3>
+        <h4>Cabe&ccedil;alho com tamanho 4</h4>
+        <h5>Cabe&ccedil;alho com tamanho 5</h5>
+        <h6>Cabe&ccedil;alho com tamanho 6</h6>
+      </body>
+    </html>
+
+    <h2 id="estilo">Aplicando estilos de texto</h2>
+    <small> <a href="#inicio">voltar</a></small>
+    <h2>Marcadores de estilo</h2>
+    <p>
+      Estes comandos permitem que o programador crie uma série de efeitos no
+      texto, alterando a forma e o tamanho da fonte. Todas as tags deste tipo
+      devem ser especificadas em pares, marcando o início e o fim do texto a ser
+      formatado.
+    </p>
+    <p>Os principais comandos de estilo de texto são:</p>
+
+    <p>
+      <strong>Negrito</strong> - Aplica o estilo negrito. Sintaxe: &LT;B> texto
+      &LT;/B&GT;;
+    </p>
+    <p>
+      <strong>Itálico</strong> - Aplica o estilo itálico. Sintaxe: &LT;I&GT;
+      texto &LT;/I&GT;;
+    </p>
+    <p>
+      <strong>Sublinhado</strong> - Aplica o estilo sublinhado. Sintaxe:
+      &LT;U&GT; texto &LT;/U&GT;;
+    </p>
+    <p>
+      <strong>Strong</strong> - Similar ao negrito. Sintaxe: &LT;STRONG&GT;
+      texto &LT;/STRONG&GT;;
+    </p>
+    <p>
+      <strong>Typewriter</strong> - Deixa o texto com espaçamento regular.
+      Sintaxe: &LT;TT&GT; texto &LT;/TT&GT;;
+    </p>
+
+    <p>
+      <strong>Big</strong> - Aumenta a fonte e aplica o estilo negrito. Sintaxe:
+      &LT;BIG&GT; texto &LT;/BIG&GT;;
+    </p>
+
+    <p>
+      <strong>Small</strong> - Reduz a fonte. Sintaxe: &LT;SMALL&GT; texto
+      &LT;/SMALL&GT;;
+    </p>
+    <p>
+      <strong>Sobrescrito</strong> - Eleva o texto e diminui seu corpo. Sintaxe:
+      &LT;SUP&GT; texto &LT;/SUP&GT;;
+    </p>
+
+    <p>
+      <strong>Subscrito</strong> - Rebaixa o texto e diminui seu corpo. Sintaxe:
+      &LT;sub&gt; texto &LT;/sub&gt;;
+    </p>
+    <p>
+      <strong>Pulsante</strong> - Faz com que o texto pisque. Este efeito não
+      funciona em todos os Browsers. Sintaxe: &LT;blink&gt; texto
+      &LT;/blink&gt;;
+    </p>
+
+    <p>
+      O exemplo a seguir mostra todos estes efeitos. Digite-o e salve-o como
+      `estilo.html'
+    </p>
+
+    <b>Negrito</b>
+    <br /><i>It&aacute;lico</i> <br /><u>Sublinhado</u> <br /><strong
+      >Strong</strong
+    >
+    <br /><tt>Typewritter</tt> <br /><big>Big</big> <br /><small>Small</small>
+    <br />Texto <sup>Sobrescrito</sup> <br />Texto <sub>Subscrito</sub>
+    <br /><blink>Pulsante</blink>
+
+    <h2 id="referencias">Referências</h2>
+
+    <p>
+      <a
+        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/abbr"
+        target="_blank"
+        >HTML: Linguagem de Marcação de Hipertexto</a
+      >
+    </p>
+    <p>
+      <a
+        href="https://www.youtube.com/watch?v=EXstBFCsy2A&ab_channel=EliasRibeiro"
+        target="_blank"
+        >Curso de HTML (aula 1) Iniciantes / básico - Introdução e estrutura do
+        html</a
+      >
+    </p>
+
+    <blockquote>Finalizando atividade, os tudos continuam</blockquote>
+  </body>
+</html>
