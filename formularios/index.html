@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fomulário de Cadastro</title>
+  </head>
+  <body>
+    <div>
+      <form
+        id="signup"
+        action="#"
+        method="post"
+        autocomplete="off"
+        onsubmit="alert('Formulário enviado!')"
+      >
+        <fieldset style="width: 400px; height: auto">
+          <legend>Formulário</legend>
+          <label for="">Nome:</label> <input type="text" name="name" /> <br />
+          <label for="">Idade</label>
+          <input type="number" name="age" min="0" /> <br />
+          <label for="">Senha:</label> <input type="password" name="senha" />
+          <br />
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <form
+        id="signup"
+        action="#"
+        method="post"
+        autocomplete="off"
+        onsubmit="alert('Formulário enviado!')"
+      >
+        <fieldset style="width: 400px; height: auto">
+          <legend>Formulário</legend>
+          <label for="">Texto:</label> <input type="text" name="name" /> <br />
+          <label for="">Numero</label>
+          <input type="number" name="age" min="0" max="99" /> <br />
+          <label for="">Button</label> <input type="button" value="Enviar"" />
+          <br />
+          <label for="">Range:</label> <input type="range" mim="0" max="10" />
+          <br />
+          <label for="">Collor:</label> <input type="color" /><br />
+          <label for="">E-mail:</label> <input type="email" /><br />
+          <label for="">URL</label> <input type="url" /><br />
+          <label for="">Date:</label> <input type="date" /> <br />
+          <label for="">Week:</label> <input type="week" /> <br />
+          <label for="">Month:</label> <input type="month" /> <br />
+          <label for="">Checkbox:</label> <input type="checkbox" /> <br />
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+          <label for="">File:</label> <input type="file" multiple /> <br />
+          <label for="">Search:</label> <input type="search" multiple /> <br />
+          <button type="button">Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
