@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<style>
+    table {
+        -webkit-box-shadow: 19px 17px 15px 5px rgba(0, 0, 0, 0.59);
+        box-shadow: 19px 17px 15px 5px rgba(0, 0, 0, 0.40);
+        border: solid 1px gray;
+    }
+
+    table thead th {
+        background-color: black;
+        color: white;
+    }
+
+    table tbody tr:nth-child(even) td {
+        background-color: rgb(148, 143, 143);
+    }
+
+    table tbody tr:hover td {
+        background-color: rgb(7, 200, 46);
+        cursor: pointer;
+    }
+
+    table tfoot td {
+        background-color: rgb(234, 224, 224);
+    }
+</style>
+
+<body>
+    <table summary="descrição da tabela" width="200" align="center" cellspacing="0" cellpadding="5">
+        <caption> Tabela de XXXXX</caption>
+        <thead>
+            <tr id="1">
+                <th title="nome completo">Nome</th>
+                <th title="idade">Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="2">
+                <td>Cylene</td>
+                <td>40</td>
+            </tr>
+            <tr id="3">
+                <td>Naruto</td>
+                <td>20</td>
+            </tr>
+            <tr id="4">
+                <td>Sasuke</td>
+                <td>20</td>
+            </tr>
+            <tr id="4">
+                <td>Luffy</td>
+                <td>18</td>
+            </tr>
+            <tr id="5">
+                <td>José de Alencar</td>
+                <td>42 </td>
+            </tr>
+            <tr id=6>
+                <td>Maria</td>
+                <td>30</td>
+            </tr>
+            <tr id="7">
+                <td>Carlor</td>
+                <td>31 </td>
+            </tr>
+        <tfoot>
+            <tr id="7">
+                <td>Total</td>
+                <td>7</td>
+            </tr>
+
+        </tfoot>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
