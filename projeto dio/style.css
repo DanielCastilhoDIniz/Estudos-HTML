@@ -33,6 +33,13 @@ body {
     padding: 20px;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(0, 0, 0);
     min-height: 150px;
+}
+
+.main_footer_copy{
+    background-color:#121617; 
+	color:#fff; 
+	font-size:0.875em; 
+    padding: auto;
 }
