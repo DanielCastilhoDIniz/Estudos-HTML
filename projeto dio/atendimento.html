@@ -9,6 +9,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+    table {
+        width: 100%;
+        -webkit-box-shadow: 19px 17px 15px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 19px 17px 15px 5px rgba(0, 0, 0, 0.10);
+        border: solid 1px rgb(0, 0, 0);
+        text-align: center;
+        border-collapse:collapse;
+    }
+
+    table thead th {
+        background-color: black;
+        color: white;
+        border: solid 1px;
+        
+    }
+
+    table tbody tr:nth-child(even) td {
+        
+        text-align: center;
+        border: solid 1px rgb(0, 0, 0);
+    }
+
+    table tbody tr:hover td {
+        background-color: rgb(7, 200, 46);
+        cursor: pointer;
+        border: solid 1px rgb(0, 0, 0);
+    }
+
+    table tfoot td {
+        background-color: rgb(234, 224, 224);
+        border: solid 1px rgb(0, 0, 0);
+    }
+</style>
+
+
 <body>
     <div class="wrapper">
         <div class="main">
@@ -34,15 +70,52 @@
             <div class="content">
 
                 <h2>
-                    Atendimento
+                    Horário de atendimento
                 </h2>
 
 
-                <table>
+                <table summary="Horário de atendimento" width="600" align="center" cellspacing="1" cellpadding="20" border="2">
+                    
+                    <thead>
+                        <tr id="1">
+                            <th title="nome completo">Serviços</th>
+                            <th title="idade">Segunda a Sexta</th>
+                            <th title="idade">Sábados</th>
+                            <th title="idade">Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="2">
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14hh</td>
+                        </tr>
+                        <tr id="3">
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr id="4">
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr id="4">
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+
+
+                    </tbody>
 
                 </table>
 
-                
+
             </div>
 
 
