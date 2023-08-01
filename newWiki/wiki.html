@@ -10,57 +10,243 @@
 </head>
 
 <body>
-    </header>
-        <figure>
-            <img title="wikifísica" src="/newWiki/images/logo.png" width="100" alt="logo atómo com elétrons orbitando" />
-        </figure>
-        <nav>Barra de navegação</nav>
     <header>
-
-        <div class="content">
-            <div class="sidebar">
-                <h2>Física</h2>
-                <ul>
-                    <li><a href="#">Links</a></li>
+        <figure>
+            <img title=" logo da pagina wikifísica" src="/newWiki/images/logo.png" width="100"
+                alt="logo atómo com elétrons orbitando" />
+        </figure>
+    </header>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='http://'>Home</a></li>
+            <li><a class='dropdown-arrow' href='http://'>Products</a>
+                <ul class='sub-menus'>
+                    <li><a href='http://'>Products 1</a></li>
                 </ul>
-            </div>
+            </li>
+            <li><a class='dropdown-arrow' href='http://'>Services</a>
+                <ul class='sub-menus'>
+                    <li><a href='http://'>Services 1</a></li>
+                </ul>
+            </li>
+            <li><a href='http://'>Contact Us</a></li>
+        </ul>
 
-            <main>
-                <header>
-                    <h1>Física</h1>
-                    <hr>
-                </header>
-                
+        <script>
+            function updatemenu() {
+                if (document.getElementById('responsive-menu').checked == true) {
+                    document.getElementById('menu').style.borderBottomRightRadius = '0';
+                    document.getElementById('menu').style.borderBottomLeftRadius = '0';
+                } else {
+                    document.getElementById('menu').style.borderRadius = '0px';
+                }
+            }
+        </script>
+    </nav>
+
+
+    <div class="content">
+        <aside class="sidebar" role="doc-acknowledgments">
+            <h2 title="Links de acesso a seções do texto">Física</h2>
+            <ul>
+                <li><a href="#" role="button">Links</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <header>
+                <h1 id="eletromag" title="Titulo do texto principal eletromagnetismo">Eletromagnetismo</h1>
+                <hr>
+            </header>
+
+
+            <p role="text">
+                O <strong>eletromagnetismo</strong>, na física, é uma interação que ocorre entre partículas com
+                carga elétrica por
+                meio de campos eletromagnéticos. A força eletromagnética é uma das quatro forças fundamentais da
+                natureza. É a força dominante nas interações de átomos e moléculas. O eletromagnetismo pode ser
+                pensado como uma combinação de eletrostática e magnetismo, dois fenômenos distintos, mas intimamente
+                interligados. As forças eletromagnéticas ocorrem entre quaisquer duas partículas carregadas,
+                causando uma atração entre partículas com cargas opostas e repulsão entre partículas com a mesma
+                carga, enquanto o magnetismo é uma interação que ocorre exclusivamente entre partículas carregadas
+                em movimento relativo. Esses dois efeitos se combinam para criar campos eletromagnéticos nas
+                proximidades de partículas carregadas, que podem acelerar outras partículas carregadas por meio da
+                força de Lorentz. Em alta energia, a força fraca e a força eletromagnética são unificadas como uma
+                única força eletrofraca.
+            </p>
+            <p role="text">
+                A força eletromagnética é responsável por muitos dos fenômenos químicos e físicos observados na vida
+                cotidiana. A atração eletrostática entre os núcleos atômicos e seus elétrons mantém os átomos
+                juntos. As forças elétricas também permitem que diferentes átomos se combinem em moléculas,
+                incluindo as macromoléculas, como as proteínas que formam a base da vida. Enquanto isso, as
+                interações magnéticas entre os momentos magnéticos de spin [en] e momento angular dos elétrons
+                também desempenham um papel na reatividade química; tais relações são estudadas na química de spin
+                [en]. O eletromagnetismo também desempenha um papel crucial na tecnologia moderna: produção,
+                transformação e distribuição de energia elétrica, produção e detecção de luz, calor e som, fibra
+                ótica e comunicação sem fio, sensores, computação, eletrólise, galvanoplastia e motores e atuadores
+                mecânicos.
+            </p>
+            <p role="text">
+                O eletromagnetismo tem sido estudado desde os tempos antigos. Muitas civilizações antigas, incluindo
+                os gregos e os maias, criaram teorias abrangentes para explicar raios, eletricidade estática e a
+                atração entre pedaços magnetizados de minério de ferro. No entanto, não foi até o final do século
+                XVIII que os cientistas começaram a desenvolver uma base matemática para entender a natureza das
+                interações eletromagnéticas. Nos séculos XVIII e XIX, cientistas e matemáticos proeminentes como
+                Coulomb, Gauss e Faraday desenvolveram leis homônimas que ajudaram a explicar a formação e a
+                interação dos campos eletromagnéticos. Este processo culminou na década de 1860 com a descoberta das
+                equações de Maxwell, um conjunto de quatro equações diferenciais parciais que fornecem uma descrição
+                completa dos campos eletromagnéticos clássicos. Além de fornecer uma base matemática sólida para as
+                relações entre eletricidade e magnetismo que os cientistas vêm explorando há séculos, as equações de
+                Maxwell também preveem a existência de ondas eletromagnéticas autossustentáveis. Maxwell postulou
+                que tais ondas constituem a luz visível, o que mais tarde se provou verdadeiro. De fato, raios gama,
+                raios X, radiação ultravioleta, visível, infravermelha, micro-ondas e ondas de rádio foram todos
+                determinados como sendo radiação eletromagnética diferindo apenas em sua faixa de frequências.
+            </p>
+
+            <p role="text" name="novo paragrafo">
+                Na era moderna, os cientistas continuaram a refinar o teorema do eletromagnetismo para levar em
+                conta os efeitos da física moderna, incluindo a mecânica quântica e a relatividade. De fato, as
+                implicações teóricas do eletromagnetismo, particularmente o estabelecimento da velocidade da luz com
+                base nas propriedades do "meio" de propagação (permeabilidade e permissividade), ajudaram a inspirar
+                a teoria da relatividade especial de Einstein em 1905. Enquanto isso, o campo da eletrodinâmica
+                quântica (E.D.Q.) [a] modificou as equações de Maxwell para serem consistentes com a natureza
+                quantizada da matéria. Na eletrodinâmica quântica (E.D.Q.[a]), o campo eletromagnético é expresso em
+                termos de partículas discretas conhecidas como fótons, que também são os quanta físicos da luz.
+                Hoje, existem muitos problemas no eletromagnetismo que permanecem sem solução, como a existência de
+                monopolos magnéticos e o mecanismo pelo qual alguns organismos podem sentir campos elétricos e
+                magnéticos.
+            </p>
+
+            <section>
+                <h1 id="ht" name="nova seção subtitulo">História da teoria</h1>
+                <hr>
 
                 <p>
-                    <strong>Física</strong> (do grego antigo: φύσις physis "natureza") é a ciência que estuda a natureza
-                    e seus fenômenos
-                    em seus aspectos gerais. Analisa suas relações e propriedades, além de descrever e explicar a maior
-                    parte de suas consequências. Busca a compreensão científica dos comportamentos naturais e gerais do
-                    mundo em nosso entorno, desde as partículas elementares até o universo como um todo. Com o
-                    amparo do método científico e da lógica, e tendo a matemática como linguagem natural, esta ciência
-                    descreve a natureza por meio de modelos científicos. É considerada a ciência fundamental, sinônimo
-                    de ciência natural: as ciências naturais, como a química e a biologia, têm raízes na física. Sua
-                    presença no cotidiano é muito ampla, sendo praticamente impossível uma completíssima descrição dos
-                    fenômenos físicos em nossa volta. A aplicação da física para o benefício humano contribuiu de uma
-                    forma inestimável para o desenvolvimento de toda a tecnologia moderna, desde o automóvel até os
-                    computadores quânticos.
+                    Originalmente, a eletricidade e o magnetismo eram considerados duas forças separadas. Essa visão
+                    mudou com a publicação de James Clerk Maxwell em 1873, Tratado sobre eletricidade e
+                    magnetismo,[ no qual as interações de cargas positivas e negativas mostraram ser mediadas
+                    por uma força. Existem quatro efeitos principais resultantes dessas interações, todos os quais
+                    foram claramente demonstrados por experimentos:
                 </p>
 
-            </main>
+                <ol>
+                    <li> Cargas elétricas se atraem ou se repelem com uma força inversamente proporcional ao
+                        quadrado da distância entre elas: cargas diferentes se atraem, iguais se repelem.
+                    </li>
+                    <li>Os pólos magnéticos (ou estados de polarização em pontos individuais) se atraem ou se
+                        repelem de maneira semelhante às cargas positivas e negativas e sempre existem como pares:
+                        cada pólo norte está unido a um pólo sul.
+                    </li>
+                    <li>
+                        Uma corrente elétrica dentro de um fio cria um campo magnético circunferencial
+                        correspondente
+                        fora do fio. Seu sentido (horário ou anti-horário) depende do sentido da corrente no fio.
+                    </li>
 
+                    <li>
+                        Uma corrente é induzida em uma espira de fio quando ela se aproxima ou se afasta de um campo
+                        magnético, ou quando um ímã se aproxima ou se afasta dele; a direção da corrente depende da
+                        direção do movimento.[4]
+                    </li>
+                </ol>
+
+                <p>
+                    Em abril de 1820, Hans Christian Ørsted observou que uma corrente elétrica em um fio fazia com
+                    que a agulha de uma bússola próxima se movesse. Na época da descoberta, Ørsted não sugeriu
+                    nenhuma explicação satisfatória para o fenômeno, nem tentou representar o fenômeno em uma
+                    estrutura matemática. No entanto, três meses depois, ele iniciou investigações mais
+                    intensivas.[5][6] Logo depois ele publicou suas descobertas, provando que uma corrente elétrica
+                    produz um campo magnético ao fluir através de um fio. A unidade CGS de indução magnética
+                    (oersted) é nomeada em homenagem a suas contribuições para o campo do eletromagnetismo.[
+                </p>
+
+                <p>
+                    Suas descobertas resultaram em intensa pesquisa em toda a comunidade científica em
+                    eletrodinâmica. Eles influenciaram os desenvolvimentos do físico francês André-Marie Ampère de
+                    uma única forma matemática para representar as forças magnéticas entre condutores portadores de
+                    corrente. A descoberta de Ørsted também representou um grande passo em direção a um conceito
+                    unificado de energia.
+                </p>
+
+                <p>
+                    Essa unificação, observada por Michael Faraday, ampliada por James Clerk Maxwell e parcialmente
+                    reformulada por Oliver Heaviside e Heinrich Hertz, é uma das principais realizações da física
+                    matemática do século XIX.[8] Teve consequências de longo alcance, uma das quais foi a
+                    compreensão da natureza da luz. Ao contrário do que foi proposto pela teoria eletromagnética da
+                    época, a luz e outras ondas eletromagnéticas são vistas atualmente como tendo a forma de
+                    perturbações oscilatórias e autopropagadas do campo eletromagnético quantizadas chamadas fótons.
+                    Diferentes frequências de oscilação dão origem a diferentes formas de radiação eletromagnética,
+                    desde ondas de rádio nas frequências mais baixas, até luz visível em frequências intermediárias,
+                    até raios gama nas frequências mais altas.
+                </p>
+
+                <p>
+                    Ørsted não foi a única pessoa a examinar a relação entre eletricidade e magnetismo. Em 1802,
+                    Gian Domenico Romagnosi [en], um jurista italiano, desviou uma agulha magnética usando uma pilha
+                    voltaica. A configuração factual do experimento não é completamente clara, nem se a corrente
+                    fluiu pela agulha ou não. Um relato da descoberta foi publicado em 1802 em um jornal italiano,
+                    mas foi amplamente ignorado pela comunidade científica contemporânea, porque Romagnosi
+                    aparentemente não pertencia a essa comunidade.
+                </p>
+                <p>
+                    Uma conexão anterior (1735), e muitas vezes negligenciada, entre eletricidade e magnetismo foi
+                    relatada pelo Dr. Cookson.[10] A descrição declarou:
+
+                    Um comerciante em Wakefield em Yorkshire, tendo colocado um grande número de facas e garfos em
+                    uma grande caixa... e tendo colocado a caixa no canto de uma grande sala, aconteceu uma
+                    repentina tempestade de trovões, relâmpagos, etc. ... O proprietário esvaziando a caixa em um
+                    balcão onde estavam alguns pregos, as pessoas que pegaram as facas, que deitaram nos pregos,
+                    observaram que as facas pegaram os pregos. Nisso todo o número foi testado e descobriu-se que
+                    fazia o mesmo, e isso, a ponto de pegar pregos grandes, agulhas de embalagem e outras coisas de
+                    ferro de peso considerável ...
+                </p>
+
+
+                <section>
+                    <h1 id=forcasfundamentais>Forças fundamentais</h1>
+                    <hr>
+                    <p>
+                        A força eletromagnética é uma das quatro forças fundamentais conhecidas e a segunda mais forte
+                        (depois da força nuclear forte), operando com alcance infinito; As outras forças
+                        fundamentais são:
+                    <ul style="list-style: square; padding-left: 15px;" name="lista não numerada" role="list">
+                        <li>a força nuclear forte, que liga quarks para formar núcleons e liga núcleons para formar
+                            núcleos; é a mais forte das quatro forças fundamentais conhecidas, mas opera apenas em curto
+                            alcance;
+                        </li>
+
+                        <li> a força nuclear fraca, que se liga a todas as partículas conhecidas no Modelo padrão e
+                            causa
+                            certas formas de decaimento radioativo; é a segunda mais fraca das quatro forças
+                            fundamentais e, como a força nuclear forte, opera apenas em curto alcance (note que na
+                            física de partículas, a interação eletrofraca é a descrição unificada de duas das quatro
+                            interações fundamentais conhecidas da natureza: eletromagnetismo e a interação fraca);
+                        </li>
+                    </ul>
+                    </p>
+
+                </section>
+
+
+        </main>
+
+        <nav>
             <div class="anchors">
                 <h2>Neste Artigo</h2>
                 <ul>
-                    <li><a href="#">Âncoras</a></li>
+                    <li><a href="#eltromag" name="link para o topo, eletromagnetismo">Eletromagnetismo</a></li>
+                    <li><a href="#ht" title="História da teoria">História da teoria</a></li>
+                    <li><a href="#forcasfundamentais">Forças fundamentais</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
+    </div>
 
-        <footer>
+    <footer>
 
-            footer
-        </footer>
+        footer
+    </footer>
 </body>
 
 </html>
